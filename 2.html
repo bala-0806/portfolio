@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="menu">
+                <div class="menu-dots" onclick="toggleMenu()">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+                <div class="popup-menu" id="popupMenu">
+                    <ul>
+                        <li onclick="navigateTo('resume')">Resume</li>
+                        <li onclick="navigateTo('projects')">Projects</li>
+                        <li onclick="navigateTo('contact')">Contact</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="intro-container">
+                <div class="intro-text">
+                    <p class="intro-small">I'M</p>
+                    <h1>Balasekar S</h1>
+                    <p>Software Developer</p>
+                    <p>I'm eager to kick-start my career as an entry-level software engineer at a forward-thinking company where I can enhance my skills and contribute to meaningful projects. Let's build the future together.</p>
+                    <button class="contact-btn" onclick="navigateTo('contact')">Contact Me</button>
+                </div>
+                <img src="Photos/3.png" class="profile-photo">
+            </div>
+        </header>
+
+        <section id="resume">
+            <h2>My Resume</h2>
+            <ul>
+                <li><a href="https://drive.google.com/file/d/1NI4pyHZyJMmzhKP7nTsUgZnfLPpYXXOM/view?usp=drive_link" target="_blank">View My Resume</a></li>
+            </ul>
+        </section>
+
+        <hr class="line">
+
+        <section id="projects">
+            <h2>My Projects</h2>
+            <ul>
+                <li><a href="https://github.com/bala-0806/qrcode-generator.git" target="_blank">View My Projects</a></li>
+            </ul>
+        </section>
+
+        <hr class="line">
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>Email: <a href="mailto:balasekarbalji123@gmail.com">balasekarbalji123@gmail.com</a></p>
+            <p>Phone: <a href="tel:+91 7695998778">+91 7695998778</a></p>
+            <p>WhatsApp: <a href="https://wa.me/7695998778" target="_blank">+91 7695998778</a></p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/bala-sekar-7275b7221" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://www.instagram.com/balasekar_0806" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://wa.me/7695998778" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

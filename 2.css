@@ -1,0 +1,206 @@
+/* 2.css */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: url('texture.jpg') repeat; /* Dark gray textured background */
+    background-color: #34353a;
+    color: #fff; /* White text */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding: 20px;
+}
+
+.container section {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #efbf6b;
+}
+
+header {
+    position: relative;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+header .menu {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+}
+
+header .menu-dots {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+header .menu-dots .dot {
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+}
+
+header .menu-dots .dot:hover {
+    background-color: #0073b1;
+}
+
+header .popup-menu {
+    display: none;
+    position: absolute;
+    top: 25px;
+    right: 0;
+    background-color: #2f3239;
+    border: 1px solid #3d3e42;
+    border-radius: 5px;
+    z-index: 10;
+}
+
+header .popup-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header .popup-menu ul li {
+    padding: 10px 20px;
+    cursor: pointer;
+    color: #efbf6b;
+    transition: background-color 0.3s;
+}
+
+header .popup-menu ul li:hover {
+    background-color: #3d3e42;
+}
+
+.intro-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em;
+    text-align: left;
+}
+
+.intro-text {
+    max-width: 60%;
+}
+
+.intro-small {
+    font-size: 1.2em;
+    color: #efbf6b;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3em;
+    animation: fadeIn 2s ease-in;
+    color: #efbf6b;
+}
+
+header p {
+    font-size: 1.2em;
+    animation: fadeIn 3s ease-in;
+    margin: 0.5em 0;
+}
+
+.contact-btn {
+    padding: 0.5em 2em;
+    font-size: 1em;
+    color: #efbf6b;
+    background: none;
+    border: 2px solid #efbf6b;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+.contact-btn:hover {
+    background: #efbf6b;
+    color: #333;
+}
+
+.profile-photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-left: 2em;
+    border: 2px solid #efbf6b;
+}
+
+section {
+    padding: 2em;
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+    color: #efbf6b; /* Updated color */
+    cursor: pointer; /* Added cursor style */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 1em;
+    padding: 1em;
+    background: #444;
+    border-left: 5px solid #0073b1;
+    animation: slideIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
+}
+
+#contact {
+    text-align: center;
+}
+
+#contact a {
+    color: #fff;
+    transition: color 0.3s;
+}
+
+#contact a:hover {
+    color: #efbf6b;
+}
+
+.social-links {
+    margin-top: 1em;
+}
+
+.social-links a {
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 2em;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #0073b1; /* LinkedIn blue */
+}
+
+.social-links a:hover i.fa-instagram {
+    color: #e4405f; /* Instagram pink */
+}
+
+.social-links a:hover i.fa-whatsapp {
+    color: #25d366; /* WhatsApp green */
+}
